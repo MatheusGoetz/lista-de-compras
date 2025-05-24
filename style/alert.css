@@ -1,0 +1,30 @@
+#remove-item{
+  margin-top: 2.5rem;
+  display: flex;
+  width: 100%;
+
+  color: var(--always-white);
+  background-color: var(--color-danger);
+  font: var(--tx-normal);
+
+  padding: 0.75rem;
+  border-radius: 12px;
+
+  & span{
+    display: flex;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  & img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & img.close{
+    margin: auto;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+}

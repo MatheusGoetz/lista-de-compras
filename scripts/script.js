@@ -1,0 +1,1 @@
+let addInput = document.getElementById("product");

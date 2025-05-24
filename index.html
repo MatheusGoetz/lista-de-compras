@@ -18,10 +18,28 @@
     </header>
     <main class="container">
       <h1>Compras da semana</h1>
-      <form class="add-product">
+      <form>
+        <div id="add-product">
           <input type="text" name="product" id="product" placeholder="Adicione um novo item">
-          <button type="submit">Adicionar item</button>
+          <button type="submit" >Adicionar item</button>
+        </div>
       </form>
+      <div class="items-list">
+        <ul>
+          <li>
+            <input type="checkbox" name="item" id="item">
+            <label for="item">Papel higienico</label>
+            <img src="./assets/icon-delete.svg" alt="icone de lixeira">
+          </li>
+        </ul>
+      </div>
+      <div id="remove-item">
+        <img src="./assets/Icon.svg" alt="icone de alerta">
+        <span>O item foi removido da lista</span>
+        <img src="./assets/icon-X.svg" alt="icone de X " class="close">
+      </div>
     </main>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
