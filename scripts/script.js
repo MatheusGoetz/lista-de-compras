@@ -29,7 +29,7 @@ function addProduct(newItem){
 
     // Cria icone de remover.
     const removeProduct = document.createElement("img")
-    removeProduct.classList.add("close")
+    removeProduct.classList.add("remove-item")
     removeProduct.setAttribute("src", "./assets/icon-delete.svg")
     removeProduct.setAttribute("alt", "Icone de remoção")
 
@@ -42,8 +42,24 @@ function addProduct(newItem){
     
     listItems.append(productItem)
 
+    formClear()
+
   } catch (error) {
     console.log(error)
     alert("Não foi possivel adicionar um novo item")
   }
+}
+
+listItems.addEventListener("click", function(event){
+  if (event.target.classList.contains("remove-item")){
+    const item = event.target.closest(".newItem")
+
+    item.remove()
+  }
+})
+
+function formClear(){
+  product.value = ""
+
+  product.focus()
 }
