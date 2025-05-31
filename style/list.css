@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.items-list ul li{
+.items-list ul .newItem{
   list-style: none;
 
   display: flex;
@@ -12,6 +12,7 @@
   width: 40rem;
   height: 3rem;
   padding: 0.75rem;
+  margin-top: 1rem;
 
   font: var(--label);
   color: var(--color-secondary);
@@ -19,7 +20,7 @@
 
   border-radius: 12px;
 
-  & label{
+  & .item{
     display: flex;
     padding-left: 1rem;
     width: 100%;
@@ -34,4 +35,3 @@
   }
 }
  
-
