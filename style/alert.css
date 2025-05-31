@@ -1,4 +1,4 @@
-#remove-item{
+.remove-alert{
   margin-top: 2.5rem;
   display: flex;
   width: 100%;
@@ -27,4 +27,6 @@
     padding-right: 1rem;
     cursor: pointer;
   }
+
 }
+
